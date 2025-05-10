@@ -14,7 +14,7 @@ fn main() {
         #[cfg(not(target_arch = "wasm32"))]
         Wireframe2dPlugin::default(),
     ))
-        .add_systems(Startup, setup);
+    .add_systems(Startup, setup);
     #[cfg(not(target_arch = "wasm32"))]
     app.add_systems(Update, toggle_wireframe);
     app.run();
